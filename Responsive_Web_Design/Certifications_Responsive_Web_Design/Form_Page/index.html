@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Certification Responsive Web Design</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"></link>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Registration Form</h1>
+      <p id="description">Certification Form Responsive Web Design Freecodecamp</p>
+      <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+          <label for="name" id="name-label">Name
+            <input 
+            id="name" 
+            type="text" 
+            placeholder="Insert your name"
+            required>
+        </label>
+
+        <label for="email" id="email-label">Email 
+          <input 
+            id="email" 
+            type="email" 
+            name="email" 
+            placeholder="Inser a valid e-mail"
+            required>
+        </label>
+
+        <div class="check">
+        <label for="number" id="number-label">Age 
+          <input 
+          id="number" 
+          type="number" 
+          min="0" 
+          max="120" 
+          placeholder="0" 
+          required>
+          </input>
+        </label>
+
+        <label for="dropdown">Gender
+          <select id="dropdown" name="dropdown" required>
+            <option value="select">Select...</option>
+            <option value="male">Male</option>
+            <option value="female">Female</option>
+            <option value="others">Others</option>
+          </select>
+        </label>
+      
+        <label for="new_user"> 
+          <legend>User Type</legend>
+          <input 
+          type="radio" 
+          name="user" 
+          class="inline"
+          value="new_user"
+          checked>New User
+          </input>
+          </label>
+          <label for="registered_user">
+            <input 
+            type="radio" 
+            name="user" 
+            class="inline"
+            value="registered_user">Registered User
+          </input>
+          </label>
+        </div>
+        <div class="check_2">
+          <label for="checkbox" > Select your interests:
+            <label><input type="checkbox" name="web design" value="web design" class="inline"> Web design</input></label>
+            <label><input type="checkbox" name="programming" value="programming" class="inline"> Programming</input></label>
+            <label><input type="checkbox" name="testing" value="testing" class="inline"> Testing</input></label>
+            <label><input type="checkbox" name="security" value="security" class="inline"> Security</input></label>
+            <label><input type="checkbox" name="others" value="others" class="inline"> Others</input></label>
+           </label>
+        </div>
+        </fieldset>
+       
+        <fieldset>
+         <label for="textarea">Leave your comments:</label>
+          <textarea 
+           id="textarea" 
+           name="textarea" 
+           rows="8" 
+           cols="30" 
+           placeholder="I like to know...">
+          </textarea>
+        </fieldset>
+        <fieldset>
+          <label for="termsCheckbox">
+            <input 
+            type="checkbox" 
+            class="inline" 
+            name="termsCheckbox"
+            value="termsCheckbox"
+            required> I agree to the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+          </label>
+        </fieldset>
+        <input id="submit" type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>
